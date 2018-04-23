@@ -120,5 +120,7 @@ def play(board)
   while over?(board) == false
     turn(board)
   end
-  if won
+  if won?(board) == true
+    winner_value = winner(board)
+    puts "Congratulations #{winner_value}
 end
