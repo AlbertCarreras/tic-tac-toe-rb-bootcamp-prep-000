@@ -112,17 +112,16 @@ end
 
 def winner(board)
   if won?(board) != false
-    winner_name = board[won?(board)[0]]
+    board[won?(board)[0]]
   end
-  winner_name
 end
 
 def play(board)
   while over?(board) == false
     turn(board)
   end
-  if won?(board) == true
-    puts "Congratulations X!"
+  if won?(board) != false
+    puts "Congratulations #{winner(board)}!"
   elsif draw?(board) == true
   
   end
