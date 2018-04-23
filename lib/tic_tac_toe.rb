@@ -117,8 +117,7 @@ def winner(board)
 end
 
 def play(board)
-  turn(board)
   if over?(board) == false
-    play(board)
+    turn(board)
   end
 end
