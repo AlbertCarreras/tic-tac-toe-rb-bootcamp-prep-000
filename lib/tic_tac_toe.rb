@@ -117,5 +117,7 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
+  if over?(board) == false
+    turn(board)
+  end
 end
