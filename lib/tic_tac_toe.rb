@@ -122,7 +122,7 @@ def play(board)
     turn(board)
   end
   if won?(board) == true
-    puts "Congratulations #{won?(board)}!"
+    puts "Congratulations X!}!"
   elsif draw?(board) == true
   
   end
