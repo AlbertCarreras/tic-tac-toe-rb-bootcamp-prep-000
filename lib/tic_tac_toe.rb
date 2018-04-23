@@ -96,9 +96,7 @@ def draw?(board)
   status = ""
   if won?(board) == false && full?(board) == true
       status = true
-    elsif won?(board) == false && full?(board) == false
-      status = false
-    elsif won?(board) != false 
+    else 
      status = false
    end
    status
